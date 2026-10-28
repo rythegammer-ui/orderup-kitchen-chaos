@@ -7,7 +7,6 @@
        PLACEHOLDER_EMAIL                   -> real email address
        https://formspree.io/f/PLACEHOLDER  -> Formspree form endpoint (quote page only)
        https://PLACEHOLDER_DOMAIN            -> live domain (canonical, schema, sitemap, robots)
-       /img/logo.png                       -> drop the logo file here
      ============================================================ -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -22,10 +21,9 @@
 </head>
 <body class="bg-white text-ink antialiased pb-20 md:pb-0">
 <header class="bg-ink text-white sticky top-0 z-40 border-b-2 border-brand">
-  <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between gap-4">
-    <a href="/" class="flex items-center gap-3 shrink-0" aria-label="All About Gutters &amp; More LLC home">
-      <img src="/img/logo.png" alt="All About Gutters &amp; More LLC" class="h-10 w-auto" width="150" height="40">
-      <span class="hidden sm:block font-extrabold tracking-tight leading-tight">All About Gutters<br class="lg:hidden"> &amp; More</span>
+  <div class="max-w-6xl mx-auto px-4 py-2 flex items-center justify-between gap-4">
+    <a href="/" class="shrink-0" aria-label="All About Gutters &amp; More LLC home">
+      <picture><source srcset="/img/logo.webp" type="image/webp"><img src="/img/logo.png" alt="All About Gutters &amp; More LLC" class="h-14 md:h-20 w-auto" width="120" height="80"></picture>
     </a>
     <nav class="hidden md:flex items-center gap-5 text-sm font-semibold" aria-label="Main"><a href="/seamless-gutters" class=" hover:text-brand">Seamless Gutters</a><a href="/drainage" class=" hover:text-brand">Drainage</a><a href="/gutter-cleaning" class=" hover:text-brand">Cleaning</a><a href="/#services" class=" hover:text-brand">All Services</a><a href="/hoa-commercial" class=" hover:text-brand">HOA &amp; Commercial</a><a href="/#areas" class=" hover:text-brand">Service Area</a></nav>
     <div class="flex items-center gap-3">
@@ -43,7 +41,8 @@
 </header>
 
 <section class="bg-ink text-white">
-  <div class="max-w-6xl mx-auto px-4 py-16 md:py-24">
+  <div class="max-w-6xl mx-auto px-4 py-16 md:py-24 ">
+    <div>
     <p class="text-brand font-bold uppercase tracking-widest text-sm">Fort Myers &bull; Lee County &bull; North Collier</p>
     <h1 class="mt-3 text-4xl md:text-6xl font-extrabold leading-tight max-w-4xl">Seamless Gutters &amp; Drainage in Fort Myers, FL</h1>
     <p class="mt-5 text-lg md:text-xl text-silver max-w-2xl">Our home base. From the older homes off McGregor Boulevard to the newer builds in Gateway and the villas south of Daniels Parkway, we're on Fort Myers rooflines every day.</p>
@@ -52,6 +51,7 @@
       <a href="/quote" class="bg-brand hover:bg-blue-600 text-white font-bold px-6 py-4 rounded text-center text-lg">Get a Free Quote</a>
     </div>
     <p class="mt-6 text-sm text-silver">Free estimates &bull; Licensed &amp; insured &bull; Most quotes done from photos</p>
+    </div>
   </div>
 </section>
 <section class="bg-white">
